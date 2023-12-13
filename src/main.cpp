@@ -4,7 +4,7 @@
 
 using namespace std;
 
-#define testMode
+// #define testMode
 
 int main()
 {

@@ -1,7 +1,7 @@
 #ifndef GAME_ONE_SHIP_ENEMY_PLAYER_HPP_
 #define GAME_ONE_SHIP_ENEMY_PLAYER_HPP_
 
-#define SHOW_ENEMY_DEBUG_STRATEGY // shows strategy on the screen
+// #define SHOW_ENEMY_DEBUG_STRATEGY // shows strategy on the screen
 
 #include "player.hpp"
 #include "game/options.hpp"

@@ -1,5 +1,6 @@
 #include "enemy_player.hpp"
 #include "random.hpp"
+#include <algorithm>
 
 #ifdef SHOW_ENEMY_DEBUG_STRATEGY
 void OneShipEnemyPlayer::showStrategy(const CoordSet& shots) const {
@@ -102,6 +103,7 @@ CoordSet OneShipEnemyPlayer::findBestShots() const {
     std::vector<std::vector<int>> shotVariants(w, std::vector<int>(h, 0)); // count possible positions for each shot
 
     int maxPositions; // trying to minimize this
+
     int positions = 0;
     for (auto shot : possibleShipLocations) { // try all possible shots
         maxPositions = 0;
